@@ -1,11 +1,12 @@
 <idea-plugin>
     <id>cn.markcwg.my-gradle-first-plugin</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>插件名称</name>
+    <vendor email="markcwg@163.com" url="http://www.baidu.com">组织名称</vendor>
 
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+      在这里介绍插件,最少40字符，否则会有红色波浪线警告很烦人<br>
+      本项目是一个模板工程，旨在为后续插件开发提供一个空白的基础模板
+      开箱即用
     ]]></description>
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
