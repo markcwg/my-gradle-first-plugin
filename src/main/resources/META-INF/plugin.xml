@@ -1,12 +1,26 @@
 <idea-plugin>
-    <id>cn.markcwg.my-gradle-first-plugin</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <id>cn.markcwg.plugins.tool.window</id>
+    <name>MyToolWindow</name>
+    <version>1.0</version>
+    <vendor email="markcwg@163.com" url="http://www.markcwg.xyz">Markcwg</vendor>
 
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+      基于IDEA插件模板方式创建测试工程<br>
+      <em>1. 学习IDEA插件工程搭建</em>
+      <em>2. 验证插件基础功能实现</em>
     ]]></description>
+
+    <change-notes><![CDATA[
+      插件开发学习功能点<br>
+      <em>1. 工程搭建</em>
+      <em>2. 菜单读取</em>
+      <em>3. 获取配置</em>
+      <em>4. 回显页面</em>
+    ]]>
+    </change-notes>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+    <idea-version since-build="173.0"/>
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
          on how to target different products -->
@@ -14,9 +28,17 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+        <!-- 配置 File -> Setting -> Tools -->
+        <projectConfigurable groupId="tools" displayName="My Test Config" id="test.id"
+                             instance="cn.markcwg.plugins.tool.window.factory.SettingFactory"/>
+
+        窗体右侧（IDEA界面右侧）
+        <toolWindow factoryClass="cn.markcwg.plugins.tool.window.factory.ReadFactory" id="Read-Book" secondary="false"
+                    icon="/icons/logo.png" anchor="right"/>
     </extensions>
 
     <actions>
         <!-- Add your actions here -->
     </actions>
+
 </idea-plugin>
