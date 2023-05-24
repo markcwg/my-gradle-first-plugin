@@ -9,6 +9,14 @@
       开箱即用
     ]]></description>
 
+    <change-notes><![CDATA[
+      插件的功能修改笔记
+    ]]>
+    </change-notes>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
@@ -20,4 +28,5 @@
     <actions>
         <!-- Add your actions here -->
     </actions>
+
 </idea-plugin>
